@@ -1,0 +1,34 @@
+# Expiration des données
+---------------------------------
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+  # Durée par défaut
+  ExpiresDefault                              "access plus 1 month"
+
+  # HTML
+  ExpiresByType html                          "access plus 0 seconds"
+
+  # Favicon 
+  ExpiresByType jpg                           "access plus 1 year"
+
+  # Images, audio et vidéo
+  ExpiresByType img/gif                       "access plus 1 month"
+  ExpiresByType img/png                       "access plus 1 month"
+  ExpiresByType img/jpg                       "access plus 1 month"
+
+  # Fonts
+  ExpiresByType fonts/otf                     "access plus 1 month"
+  ExpiresByType fonts/svg                     "access plus 1 month"
+  ExpiresByType fonts/ttf                     "access plus 1 month"
+  ExpiresByType fonts/woff                    "access plus 1 month"
+  ExpiresByType fonts/woff2                   "access plus 1 month"
+  ExpiresByType fonts/eot                     "access plus 1 month"
+
+  # CSS et JavaScript
+  ExpiresByType css                           "access plus 1 month"
+  ExpiresByType css/css                       "access plus 1 month"
+  ExpiresByType js/js                         "access plus 1 month"
+
+</IfModule>
