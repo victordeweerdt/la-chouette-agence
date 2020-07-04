@@ -14,7 +14,7 @@ ExpiresDefault A300
 ExpiresByType img/png A604800
 ExpiresByType img/jpeg A604800
 ExpiresByType js/js A604800
-ExpiresByType js/min.js A604800
+ExpiresByType js/min.js A5
 ExpiresByType css/css A3600
 ExpiresByType css A3600
 ExpiresByType jpg A29030400
